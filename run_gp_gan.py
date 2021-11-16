@@ -38,8 +38,8 @@ def main():
     parser.add_argument('--n_iteration', type=int, default=1000, help='# of iterations for optimizing z')
 
     parser.add_argument('--gpu', type=int, default=0, help='GPU ID (negative value indicates CPU)')
-    parser.add_argument('--g_path', default='models/blending_gan.npz', help='Path for pretrained Blending GAN model')
-    parser.add_argument('--unsupervised_path', default='models/unsupervised_blending_gan.npz',
+    parser.add_argument('--g_path', default='/scratch/public/GP-GAN/models/blending_gan.npz', help='Path for pretrained Blending GAN model')
+    parser.add_argument('--unsupervised_path', default='/scratch/public/GP-GAN/models/unsupervised_blending_gan.npz',
                         help='Path for pretrained unsupervised Blending GAN model')
     parser.add_argument('--list_path', default='',
                         help='File for input list in csv format: obj_path;bg_path;mask_path in each line')
